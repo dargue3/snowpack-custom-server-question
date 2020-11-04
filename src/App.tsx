@@ -23,6 +23,7 @@ function App({}: AppProps) {
         <p>
           Page has been open for <code>{count}</code> seconds.
         </p>
+        <AnotherComponent />
         <p>
           <a
             className="App-link"
@@ -34,6 +35,14 @@ function App({}: AppProps) {
           </a>
         </p>
       </header>
+    </div>
+  );
+}
+
+function AnotherComponent() {
+  return (
+    <div>
+      <span>what the hell is this</span>
     </div>
   );
 }
