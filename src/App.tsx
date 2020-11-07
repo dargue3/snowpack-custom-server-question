@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { GraphQLMockedRequest } from 'msw/lib/types';
 
 interface AppProps {}
 
@@ -23,7 +24,6 @@ function App({}: AppProps) {
         <p>
           Page has been open for <code>{count}</code> seconds.
         </p>
-        <AnotherComponent />
         <p>
           <a
             className="App-link"
@@ -35,14 +35,6 @@ function App({}: AppProps) {
           </a>
         </p>
       </header>
-    </div>
-  );
-}
-
-function AnotherComponent() {
-  return (
-    <div>
-      <span>what the hell is this</span>
     </div>
   );
 }
