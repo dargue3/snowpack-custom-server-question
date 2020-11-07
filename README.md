@@ -1,1 +1,1 @@
-The idea is that I would run `node ./server.js` and have `snowpack build --watch --hmr` running in the background. Node would serve the `build/index.html` and the websocket would quickly refresh any changes.
+What's wrong with the `msw` package such that the `import { SomeType } from 'msw/lib/types'` command causes a build failure in Snowpack?
